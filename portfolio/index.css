@@ -1,0 +1,469 @@
+body {
+    background: #111111;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+
+
+@keyframes scroll {
+    100% {
+        background-position: 0px -400%;
+    }
+}
+
+.wrapper {
+    position: relative;
+    animation: scroll 50s linear infinite;
+    background: url("./jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg");
+    height: 100%;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+#box1 {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    color: aliceblue;
+}
+
+/* 
+#box1 #spans {
+    color: #dd1d1d;
+    font-size: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#box1 #spans:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #f40388;
+}*/
+
+/* #box1 #spans:nth-child(2) {
+    color: #03f43f;
+    animation: animate 4s ease-in-out infinite;
+} */
+
+#box1 #spans {
+    position: absolute;
+    padding-left: auto;
+    padding-top: 60px;
+    font-size: 100px;
+    color: rgb(111, 228, 236);
+    -webkit-text-stroke: 2px #730b9c;
+    /* animation: animate 4s ease-in-out infinite; */
+}
+
+/* @keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+} */
+
+
+#photo {
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#image {
+    position: relative;
+    padding: 40px 150px;
+    padding-left: 50px;
+}
+
+#butter {
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    padding-left: 38%;
+    margin-top: -85px;
+}
+
+/* #photo img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 20px groove rgb(248, 248, 242);
+
+} */
+
+#content p {
+    margin: 0;
+}
+
+#line1 {
+    font-size: 50px;
+}
+
+#line2 {
+    display: inline;
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+#line3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#content h1 {
+    margin: 0;
+    padding-left: 10px;
+    display: inline;
+    background: url("./istockphoto-1401432454-1024x1024.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+#content {
+    color: aliceblue;
+    padding: 80px 150px;
+    padding-right: 50px;
+    font-size: 35px;
+    /* text-align: center; */
+}
+
+#collections h1 {
+    background: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+#collections img {
+    background: none;
+    width: 300px;
+}
+
+#grid-items {
+    display: flex;
+    flex-direction: row;
+    row-gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 75rem;
+    background: none;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    background: none;
+}
+
+#card-inner {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    min-height: 120px;
+    max-height: 500px;
+    transition: inherit;
+    border: 4px solid rgb(190, 194, 194);
+    border-radius: 20px;
+
+}
+
+#card-image {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 2.5rem;
+    height: 255px;
+    width: 255px;
+    box-sizing: content-box;
+    justify-content: center;
+    background: none;
+}
+
+
+#card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform .8s;
+    z-index: 1;
+    object-fit: contain;
+    background: none;
+}
+
+#card-title {
+    font-size: 2.2rem;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    background: none;
+    color: aliceblue;
+
+}
+
+#certificates h1 {
+    /* background: none; */
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: aliceblue;
+
+
+}
+
+#cer-grid {
+    display: flex;
+    height: 300px;
+}
+
+
+
+.photo-cer {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    /* opacity: 0; */
+}
+
+
+.photo-cer img {
+    position: absolute;
+    display: block;
+    padding: auto;
+    object-fit: contain;
+    height: 90%;
+    width: 90%;
+    padding: 15px 15px;
+
+    /* left: -99px; */
+}
+
+
+
+
+
+
+
+#grid-cer {
+    position: relative;
+    display: flex;
+    flex-grow: 2;
+}
+
+#grid-cer2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    /* background-color: aquamarine; */
+}
+
+#grid-ele {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    flex-direction: row;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 75rem;
+
+}
+
+#grid-ele2 {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    /* background-color: blueviolet; */
+    flex-direction: row;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 75rem;
+
+}
+
+#demo {
+    background-color: aqua;
+    position: unset;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* margin-left: 50%; */
+    /* display: flex; */
+    /* float: right; */
+}
+
+#element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    color: aliceblue;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    border: 4px solid rgb(190, 194, 194);
+    border-radius: 20px;
+    padding-top: 0;
+}
+
+
+
+#icon {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    align-items: center;
+    /* padding: auto;
+    margin: 0; */
+}
+
+#icon img {
+    position: absolute;
+    display: block;
+    height: 80%;
+    width: 80%;
+    /* margin: auto; */
+    /* padding: auto; */
+    object-fit: fill;
+}
+
+.nodepic {
+    /* color: aliceblue; */
+    background-color: aliceblue;
+}
+
+#contact {
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#contact h1 {
+    background: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+#grid-con {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 0 auto;
+    width: 60%;
+    /* height: 200px; */
+}
+
+#con-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    /* border: 4px solid rgb(190, 194, 194); */
+    border-radius: 20px;
+    width: 100%;
+    height: 60px;
+}
+
+#rows {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    /* background-color: aqua; */
+    flex-direction: row;
+
+}
+
+#con-img {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#con-icon {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 30%;
+    /* border-radius: 50%; */
+    /* background-color: bisque; */
+}
+
+#con-icon i {
+    color: aliceblue;
+}
+
+#con-detail {
+    position: relative;
+    display: flex;
+    flex-grow: 4;
+    /* background-color: blueviolet; */
+    align-items: center;
+}
+
+#con-detail p {
+    position: absolute;
+    color: aliceblue;
+    font-size: 30px;
+}

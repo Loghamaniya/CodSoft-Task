@@ -1,0 +1,358 @@
+* {
+    background-color: rgb(135, 192, 241);
+    margin: 0;
+}
+
+#amul-pic {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 70px;
+    width: 200px;
+    position: absolute;
+    /* background-color: yellow; */
+    z-index: 1;
+}
+
+#first {
+    /* background-color: yellow; */
+    height: 90px;
+    position: relative;
+    border-bottom: 2px solid red;
+
+}
+
+#amul {
+    position: absolute;
+}
+
+#header {
+    /* background-color: yellow; */
+    padding-left: 250px;
+    padding-right: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+
+#header-items:hover {
+    color: brown;
+}
+
+#main1 {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: space-around;
+}
+
+#slogan {
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+    font-style: italic;
+    font-stretch: expanded;
+    /* float: left; */
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 30px;
+    content: "“";
+    background: none;
+    /* position: absolute; */
+}
+
+#slogan p::before {
+    content: "“";
+}
+
+#slogan p::after {
+    content: "”";
+}
+
+#frontpic {
+    padding-top: 50px;
+    padding-right: 50px;
+    /* position: absolute; */
+}
+
+#main2 {
+    background-image: url("icepic.png");
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main2 p {
+    background: none;
+    /* height: inherit; */
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+#quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#quote h2 {
+    /* justify-content: center; */
+    /* font-size: 80px; */
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: brown; */
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+#collections {
+    /* height: 1000px; */
+    background-color: bisque;
+}
+
+#collections h1 {
+    background: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+#underline {
+    background: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#collections img {
+    background: none;
+    width: 300px;
+}
+
+#grid-items {
+    display: flex;
+    flex-direction: row;
+    row-gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 75rem;
+    background: none;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    background: none;
+}
+
+#card-section {
+    width: auto;
+    background: none;
+}
+
+
+
+#card-inner:hover {
+    background-color: rgb(7, 50, 85);
+
+}
+
+#card-inner {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    padding-bottom: 8rem;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 520px;
+    transition: inherit;
+    border: 4px solid rgb(190, 194, 194);
+    border-radius: 20px;
+    background-color: aliceblue;
+
+}
+
+#card-image {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 2.5rem;
+    height: 255px;
+    width: 255px;
+    box-sizing: content-box;
+    justify-content: center;
+    background: none;
+}
+
+#card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform .8s;
+    z-index: 1;
+    object-fit: contain;
+    background: none;
+}
+
+#card-title {
+    font-size: 2.2rem;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    background: none;
+    color: rgb(7, 50, 85);
+
+}
+
+#card-inner:hover #card-title {
+    color: aliceblue;
+
+}
+
+
+
+#card-footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    position: absolute;
+    left: 3rem;
+    right: 3rem;
+    bottom: 3rem;
+    height: 3rem;
+    font-size: 0;
+    background: none;
+}
+
+#card-detail {
+    white-space: nowrap;
+    /* border: 2px solid black; */
+    /* width: 120px; */
+    padding: 2px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(7, 50, 85);
+}
+
+#card-inner:hover #card-detail {
+    background-color: aliceblue;
+
+}
+
+#card-inner:hover #card-buy {
+    background-color: aliceblue;
+
+}
+
+#card-label {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bolder;
+    /* background-color: rgb(15, 194, 226); */
+    background: none;
+    color: aliceblue;
+}
+
+#card-inner:hover #card-label {
+    color: rgb(7, 50, 85);
+
+}
+
+#card-inner:hover #card-label2 {
+    color: rgb(7, 50, 85);
+
+}
+
+#card-label2 {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bolder;
+    /* background-color: rgb(15, 194, 226); */
+    background: none;
+    color: aliceblue;
+}
+
+
+
+#card-buy {
+    white-space: nowrap;
+    /* width: 120px; */
+    /* font-size: 1.4rem; */
+    /* border: 2px solid black; */
+    padding: 2px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(7, 50, 85);
+
+}
+
+
+
+.blue {
+    background-color: rgb(7, 50, 85);
+}
+
+.section-title {
+    margin-top: 200px;
+    padding-left: 35%;
+    /* text-align: center; */
+    color: aliceblue;
+    position: absolute;
+    max-width: 80%;
+}
+
+#second h2 {
+    font-size: 50px;
+    font-weight: 100;
+    background: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#second {
+    /* height: auto; */
+    min-height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.separator {
+    background-color: rgb(7, 50, 85);
+}
+
+#footimage img {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    height: 320px;
+    width: 400px;
+    z-index: 2;
+    background: none;
+}
