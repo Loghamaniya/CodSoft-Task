@@ -467,3 +467,13 @@ body {
     color: aliceblue;
     font-size: 30px;
 }
+
+#con-detail a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#con-detail a:hover {
+    text-decoration: none;
+    color: blue;
+}
